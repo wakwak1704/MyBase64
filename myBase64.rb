@@ -1,4 +1,4 @@
-class Base64
+module MyBase64
     class << self
         def encoder(data)
             data = convertTo0b(data)
@@ -78,5 +78,3 @@ class Base64
         end
     end
 end
-
-puts Base64.encoder(ARGV[0])
